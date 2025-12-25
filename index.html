@@ -29,10 +29,12 @@
             padding: 20px;
             max-width: 800px;
         }
-        .logo-img {
-            width: 80px;
+        /* Style for the video logo */
+        .logo-video {
+            width: 120px; /* Adjust size as needed */
             height: auto;
             margin-bottom: 20px;
+            filter: drop-shadow(0 0 10px rgba(100, 255, 218, 0.3));
         }
         .badge {
             color: var(--accent);
@@ -74,7 +76,11 @@
 <body>
 
     <div class="container">
-        <img src="Logo.png" alt="SIA Logo" class="logo-img">
+        <video class="logo-video" autoplay loop muted playsinline>
+            <source src="Logo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
         <br>
         <div class="badge">Innovation in Progress</div>
         <h1>SIA Software Innovations</h1>
@@ -87,7 +93,7 @@
             <p><strong>SIA Software Innovations Private Limited</strong></p>
             <div class="footer-info">
                 <span>CIN: U62013AP2025PTC122642</span>
-                <span>Email: admin@siasoftwareinnovations.com</span>
+                <span>Email: info@siasoftwareinnovations.com</span>
             </div>
             <p>Malikipuram, Andhra Pradesh, India - 533253</p>
         </div>
